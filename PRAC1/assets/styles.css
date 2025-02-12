@@ -1,0 +1,324 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+  }
+  
+  /* Header Styles */
+  header {
+    background: #007bff; /* Primary color */
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+  }
+  
+  header p {
+    margin: 0;
+    font-size: 1.2rem;
+    font-style: italic;
+  }
+  
+  /* Footer Styles */
+  footer {
+    background: #333; /* Dark background */
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+  }
+  
+  /* Section Styles */
+  section {
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 900px;
+  }
+  
+  section h2 {
+    color: #007bff; /* Match primary color */
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  /* List Styles (Services Page) */
+  ul.list-group {
+    list-style: none;
+    padding: 0;
+  }
+  
+  ul.list-group li {
+    padding: 10px 15px;
+    border-bottom: 1px solid #ddd;
+    font-size: 1.1rem;
+  }
+  
+  ul.list-group li:last-child {
+    border-bottom: none;
+  }
+  /* Button styles */
+.btn {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  background-color: #007bff; /* Primary blue color */
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn:hover {
+  background-color: #0056b3; /* Darker blue for hover effect */
+  transform: scale(1.05); /* Slight zoom effect */
+}
+
+.btn:active {
+  background-color: #003f7f; /* Even darker blue for active state */
+  transform: scale(1); /* Reset scale on click */
+}
+/* Navigation Bar Styles */
+.navbar {
+  padding: 15px 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add slight shadow for depth */
+  justify-content: center; /* Center the navigation items */
+  background-color: #007bff; /* Primary color */
+}
+
+.navbar-nav {
+  display: flex;
+  justify-content: center; /* Center the links */
+  gap: 20px; /* Space between links */
+  list-style: none; /* Remove default bullet points or dots */
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-nav .nav-link {
+  background-color: white; /* Background for each link */
+  color: #007bff; /* Text color matching primary theme */
+  font-size: 1rem;
+  padding: 10px 20px; /* Padding inside the links */
+  border-radius: 25px; /* Rounded corners for a "pill" look */
+  text-decoration: none; /* Remove underline */
+  transition: all 0.3s ease; /* Smooth transition for hover effects */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for the link */
+}
+
+.navbar-nav .nav-link:hover {
+  background-color: #0056b3; /* Darker blue for hover */
+  color: white; /* White text on hover */
+}
+
+.navbar-nav .nav-link.active {
+  background-color: #0056b3; /* Highlight active page */
+  color: white; /* White text for active page */
+  font-weight: bold;
+}
+
+/* Mobile Navigation Styles */
+@media (max-width: 768px) {
+  .navbar-nav {
+    flex-direction: column; /* Stack links vertically on smaller screens */
+    gap: 15px; /* Space between links in mobile view */
+  }
+
+  .navbar-nav .nav-link {
+    text-align: center; /* Center text for mobile view */
+    width: 100%; /* Full width for mobile links */
+  }
+}
+
+
+
+  
+  /* Contact Form Styles */
+  form {
+    margin-top: 20px;
+  }
+  
+  form .form-label {
+    font-weight: bold;
+  }
+  
+  form .form-control {
+    margin-bottom: 15px;
+    border-radius: 5px;
+  }
+  
+  form button {
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  form button:hover {
+    background: #0056b3; /* Darker shade for hover */
+  }
+  
+  /* Image Styling */
+  img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin: 10px 0;
+  }
+  
+  /* Utility Styles */
+  .text-center {
+    text-align: center;
+  }
+  
+  .bg-primary {
+    background: #007bff;
+    color: white;
+  }
+  
+  .bg-dark {
+    background: #333;
+    color: white;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    header h1 {
+      font-size: 2rem;
+    }
+  
+    section h2 {
+      font-size: 1.5rem;
+    }
+  
+    form button {
+      width: 100%;
+    }
+  }
+  
+
+  /* Services Section */
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.service-box {
+  background-color: #ffffff; /* White background for the box */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  padding: 20px;
+  text-align: center;
+  width: 300px; /* Set a fixed width for each box */
+  transition: transform 0.3s ease; /* Smooth zoom effect on hover */
+}
+
+.service-box:hover {
+  transform: scale(1.05); /* Slight zoom on hover */
+}
+
+.service-image {
+  max-width: 100%; /* Responsive image */
+  border-radius: 10px; /* Match the box's corners */
+  margin-bottom: 15px; /* Space below the image */
+}
+
+.service-box h2 {
+  color: #007bff; /* Primary theme color */
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.service-box p {
+  font-size: 1rem;
+  color: #333; /* Darker text color for readability */
+  margin-bottom: 0;
+}
+/* Contact Section */
+.contact-container {
+  display: flex;
+  flex-wrap: wrap; /* Ensures responsiveness */
+  gap: 20px; /* Adds spacing between details and form */
+  justify-content: center; /* Centers content horizontally */
+  padding: 20px;
+  background-color: #f9f9f9; /* Light background for contrast */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds subtle shadow */
+}
+
+.contact-details {
+  flex: 1;
+  min-width: 300px; /* Ensures a consistent layout on smaller screens */
+  padding: 10px;
+}
+
+.contact-details h2 {
+  color: #007bff; /* Primary color */
+  margin-bottom: 15px;
+}
+
+.contact-details p {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #333;
+}
+
+.contact-form {
+  flex: 1;
+  min-width: 300px;
+  padding: 10px;
+}
+
+.contact-form .form-label {
+  font-weight: bold;
+}
+
+.contact-form .form-control {
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.contact-form button {
+  width: 100%; /* Full width button */
+  padding: 10px;
+  font-size: 1rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+  background-color: #0056b3; /* Darker shade on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .contact-container {
+    flex-direction: column; /* Stacks details and form on smaller screens */
+  }
+
+  .contact-details, .contact-form {
+    width: 100%; /* Full width for both sections */
+  }
+}
+
